@@ -455,7 +455,7 @@ with tab3:
 
     with c2:
         st.markdown("#### Industry Trend Analysis")
-        months = pd.date_range(start='2024-01-01', periods=16, freq='M')
+        months = pd.date_range(start='2024-01-01', periods=16, freq='ME')
         np.random.seed(42)
         trend_df = pd.DataFrame({
             "Month": months,
@@ -671,7 +671,7 @@ with tab6:
         st.markdown("#### Live Model Performance Dashboard")
 
         np.random.seed(42)
-        dates = pd.date_range(start='2025-11-01', periods=180)
+        dates = pd.date_range(start='2025-11-01', periods=180, freq='D')
         model_df = pd.DataFrame({
             "Date": dates,
             "AlertIQ Accuracy": np.clip(0.78 + np.cumsum(np.random.normal(0.001, 0.003, 180)), 0.78, 0.96),
