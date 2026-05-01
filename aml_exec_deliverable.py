@@ -549,7 +549,7 @@ with tab5:
         </div>
         """, unsafe_allow_html=True)
 
-    st.markdown("### Value Creation Summary")
+    st.markdown("### 3-Year Value Creation Summary")
     st.markdown("""
     <div style="overflow-x:auto; margin:16px 0">
     <table style="width:100%; border-collapse:collapse; font-size:13px">
@@ -562,11 +562,11 @@ with tab5:
     </tr>
     </thead>
     <tbody>
-    <tr style="background:#F7FBFE"><td style="padding:10px 14px"><strong>Advisory Productivity Gain</strong></td><td style="padding:10px 14px; text-align:right">Year 1</td><td style="padding:10px 14px; text-align:right">Year 2</td><td style="padding:10px 14px; text-align:right">Year 3</td></tr>
-    <tr><td style="padding:10px 14px"><strong>Benchmarking Product Revenue (New)</strong></td><td style="padding:10px 14px; text-align:right">—</td><td style="padding:10px 14px; text-align:right">Growing</td><td style="padding:10px 14px; text-align:right">Significant</td></tr>
-    <tr style="background:#F7FBFE"><td style="padding:10px 14px"><strong>Algorithm SaaS Revenue (New)</strong></td><td style="padding:10px 14px; text-align:right">—</td><td style="padding:10px 14px; text-align:right">Growing</td><td style="padding:10px 14px; text-align:right">Significant</td></tr>
-    <tr><td style="padding:10px 14px"><strong>COGS Reduction (ETL/data ops)</strong></td><td style="padding:10px 14px; text-align:right">Year 1</td><td style="padding:10px 14px; text-align:right">Year 2</td><td style="padding:10px 14px; text-align:right">Year 3</td></tr>
-    <tr style="background:#E8F7FD; font-weight:700"><td style="padding:10px 14px">Cumulative Business Value</td><td style="padding:10px 14px; text-align:right; color:#065F46">Immediate</td><td style="padding:10px 14px; text-align:right; color:#065F46">Accelerating</td><td style="padding:10px 14px; text-align:right; color:#065F46">Transformational</td></tr>
+    <tr style="background:#F7FBFE"><td style="padding:10px 14px"><strong>Advisory Productivity Gain</strong></td><td style="padding:10px 14px; text-align:right">$500K–$1M</td><td style="padding:10px 14px; text-align:right">$1.5M–$3M</td><td style="padding:10px 14px; text-align:right">$3M–$5M</td></tr>
+    <tr><td style="padding:10px 14px"><strong>Benchmarking Product Revenue (New)</strong></td><td style="padding:10px 14px; text-align:right">$0</td><td style="padding:10px 14px; text-align:right">$1M–$3M</td><td style="padding:10px 14px; text-align:right">$3M–$8M</td></tr>
+    <tr style="background:#F7FBFE"><td style="padding:10px 14px"><strong>Algorithm SaaS Revenue (New)</strong></td><td style="padding:10px 14px; text-align:right">$0</td><td style="padding:10px 14px; text-align:right">$500K–$1.5M</td><td style="padding:10px 14px; text-align:right">$2M–$5M</td></tr>
+    <tr><td style="padding:10px 14px"><strong>COGS Reduction (ETL/data ops)</strong></td><td style="padding:10px 14px; text-align:right">$200K–$500K</td><td style="padding:10px 14px; text-align:right">$400K–$800K</td><td style="padding:10px 14px; text-align:right">$600K–$1.2M</td></tr>
+    <tr style="background:#E8F7FD; font-weight:700"><td style="padding:10px 14px">Total Business Value</td><td style="padding:10px 14px; text-align:right; color:#065F46">$700K–$1.5M</td><td style="padding:10px 14px; text-align:right; color:#065F46">$3.4M–$8.3M</td><td style="padding:10px 14px; text-align:right; color:#065F46">$8.6M–$19.2M</td></tr>
     </tbody>
     </table>
     </div>
