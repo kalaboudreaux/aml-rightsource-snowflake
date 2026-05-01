@@ -549,7 +549,7 @@ with tab5:
         </div>
         """, unsafe_allow_html=True)
 
-    st.markdown("### 3-Year ROI Projection")
+    st.markdown("### Value Creation Summary")
     st.markdown("""
     <div style="overflow-x:auto; margin:16px 0">
     <table style="width:100%; border-collapse:collapse; font-size:13px">
@@ -562,13 +562,11 @@ with tab5:
     </tr>
     </thead>
     <tbody>
-    <tr style="background:#F7FBFE"><td style="padding:10px 14px"><strong>Advisory Productivity Gain</strong></td><td style="padding:10px 14px; text-align:right">$500K–$1M</td><td style="padding:10px 14px; text-align:right">$1.5M–$3M</td><td style="padding:10px 14px; text-align:right">$3M–$5M</td></tr>
-    <tr><td style="padding:10px 14px"><strong>Benchmarking Product Revenue (New)</strong></td><td style="padding:10px 14px; text-align:right">$0</td><td style="padding:10px 14px; text-align:right">$1M–$3M</td><td style="padding:10px 14px; text-align:right">$3M–$8M</td></tr>
-    <tr style="background:#F7FBFE"><td style="padding:10px 14px"><strong>Algorithm SaaS Revenue (New)</strong></td><td style="padding:10px 14px; text-align:right">$0</td><td style="padding:10px 14px; text-align:right">$500K–$1.5M</td><td style="padding:10px 14px; text-align:right">$2M–$5M</td></tr>
-    <tr><td style="padding:10px 14px"><strong>COGS Reduction (ETL/data ops)</strong></td><td style="padding:10px 14px; text-align:right">$200K–$500K</td><td style="padding:10px 14px; text-align:right">$400K–$800K</td><td style="padding:10px 14px; text-align:right">$600K–$1.2M</td></tr>
-    <tr style="background:#E8F7FD; font-weight:700"><td style="padding:10px 14px">Total Benefit</td><td style="padding:10px 14px; text-align:right; color:#065F46">$700K–$1.5M</td><td style="padding:10px 14px; text-align:right; color:#065F46">$3.4M–$8.3M</td><td style="padding:10px 14px; text-align:right; color:#065F46">$8.6M–$19.2M</td></tr>
-    <tr><td style="padding:10px 14px">Snowflake Investment</td><td style="padding:10px 14px; text-align:right; color:#991B1B">($500K)</td><td style="padding:10px 14px; text-align:right; color:#991B1B">($1.2M)</td><td style="padding:10px 14px; text-align:right; color:#991B1B">($2.5M)</td></tr>
-    <tr style="background:#0D2B4E; color:white; font-weight:800"><td style="padding:10px 14px">Net ROI</td><td style="padding:10px 14px; text-align:right; color:#29B5E8">$200K–$1M</td><td style="padding:10px 14px; text-align:right; color:#29B5E8">$2.2M–$7.1M</td><td style="padding:10px 14px; text-align:right; color:#29B5E8">$6.1M–$16.7M</td></tr>
+    <tr style="background:#F7FBFE"><td style="padding:10px 14px"><strong>Advisory Productivity Gain</strong></td><td style="padding:10px 14px; text-align:right">Year 1</td><td style="padding:10px 14px; text-align:right">Year 2</td><td style="padding:10px 14px; text-align:right">Year 3</td></tr>
+    <tr><td style="padding:10px 14px"><strong>Benchmarking Product Revenue (New)</strong></td><td style="padding:10px 14px; text-align:right">—</td><td style="padding:10px 14px; text-align:right">Growing</td><td style="padding:10px 14px; text-align:right">Significant</td></tr>
+    <tr style="background:#F7FBFE"><td style="padding:10px 14px"><strong>Algorithm SaaS Revenue (New)</strong></td><td style="padding:10px 14px; text-align:right">—</td><td style="padding:10px 14px; text-align:right">Growing</td><td style="padding:10px 14px; text-align:right">Significant</td></tr>
+    <tr><td style="padding:10px 14px"><strong>COGS Reduction (ETL/data ops)</strong></td><td style="padding:10px 14px; text-align:right">Year 1</td><td style="padding:10px 14px; text-align:right">Year 2</td><td style="padding:10px 14px; text-align:right">Year 3</td></tr>
+    <tr style="background:#E8F7FD; font-weight:700"><td style="padding:10px 14px">Cumulative Business Value</td><td style="padding:10px 14px; text-align:right; color:#065F46">Immediate</td><td style="padding:10px 14px; text-align:right; color:#065F46">Accelerating</td><td style="padding:10px 14px; text-align:right; color:#065F46">Transformational</td></tr>
     </tbody>
     </table>
     </div>
@@ -576,7 +574,7 @@ with tab5:
 
     st.markdown("""
     <div class="callout-green">
-    <strong>PE Exit Value Creation:</strong> A managed services company exits at ~8–10× EBITDA. A data products / SaaS company exits at 15–25× ARR. If AML RightSource builds $5M in new data product ARR on Snowflake by Year 3, and the exit multiple improves from 10× to 15× on that incremental ARR, <strong>the enterprise value impact is $75M+ — directly attributable to the Snowflake platform investment of ~$4.2M over 3 years.</strong>
+    <strong>PE Exit Value Creation:</strong> A managed services company exits at ~8–10× EBITDA. A data products / SaaS company exits at 15–25× ARR. By building new recurring data product revenue on Snowflake, <strong>AML RightSource can fundamentally shift its revenue quality and exit multiple — creating significant incremental enterprise value for shareholders.</strong>
     </div>
     """, unsafe_allow_html=True)
 
@@ -635,42 +633,58 @@ with tab7:
         {
             "company": "Fiserv",
             "industry": "Core Banking Platform / FinTech",
-            "summary": "Fiserv leverages Snowflake Data Sharing to provide its banking customers direct, real-time access to their transactional data from the Fiserv core banking system — without any ETL or data movement. Bank clients receive a live Snowflake share from their Fiserv environment, enabling analytics, AML monitoring, and reporting directly on their data. This is the exact architecture AML RightSource needs for Track 1.",
-            "outcome": "No-ETL data access for 10,000+ bank customers; real-time analytics on core banking data",
-            "link": "https://www.snowflake.com/en/customers/",
+            "summary": "Fiserv leverages Snowflake to power their Data as a Service (DaaS) offering — enabling financial institutions to strengthen customer relationships through real-time data sharing and analytics. Fiserv's DaaS model is built on the same zero-copy data sharing architecture AML RightSource needs for its advisory engagements: bank clients get instant, secure access to their own data insights without data movement or complex ETL pipelines.",
+            "outcome": "Fiserv DaaS enables financial institutions to move from static reporting to real-time, relationship-strengthening data intelligence",
+            "link": "https://www.carat.fiserv.com/en-us/resources/daas-strengthen-customer-relationships/",
             "tag": "🔍 Directly Relevant to UC-1"
         },
         {
-            "company": "NICE Actimize",
-            "industry": "Financial Crimes Compliance Technology",
-            "summary": "NICE Actimize, the leading AML/financial crimes technology provider, has built its cloud platform on Snowflake. Their ENGAGE platform uses Snowflake as the data backbone for transaction monitoring analytics, investigation case management, and cross-institution intelligence sharing — a proof point that the world's most specialized AML vendors choose Snowflake.",
-            "outcome": "Industry-standard AML platform built on Snowflake; serving major global banks",
-            "link": "https://www.snowflake.com/en/customers/financial-services/",
-            "tag": "🔍 AML Industry Proof Point"
+            "company": "FIS",
+            "industry": "Global Financial Technology Leader",
+            "summary": "FIS, one of the world's largest fintech companies serving banks, capital markets, and institutions globally, chose Snowflake as their core data platform. FIS uses Snowflake to unify data across its vast portfolio of banking products — enabling real-time analytics, regulatory reporting, and client intelligence at massive scale. Their story validates that the world's most critical financial infrastructure runs on Snowflake.",
+            "outcome": "Unified data platform across global banking product portfolio; real-time analytics and regulatory intelligence at scale",
+            "link": "https://www.snowflake.com/en/customers/all-customers/case-study/fis/",
+            "tag": "🏦 FSI Platform Validation"
         },
         {
-            "company": "Transunion",
-            "industry": "Credit & Identity Data / FinTech",
-            "summary": "TransUnion built a data sharing and monetization platform on Snowflake Marketplace — packaging credit risk scores, identity data, and fraud intelligence as shareable data products available to financial institutions globally. This is the same architecture AML RightSource would use to monetize its benchmarking intelligence through Marketplace for Track 2.",
-            "outcome": "New data product revenue stream via Marketplace; instant distribution to Snowflake FSI customer base",
-            "link": "https://www.snowflake.com/en/customers/financial-services/",
+            "company": "Coinbase",
+            "industry": "Crypto Exchange / Financial Services",
+            "summary": "Coinbase, the largest US crypto exchange and a highly regulated financial services firm, built their entire data and analytics infrastructure on Snowflake. Coinbase uses Snowflake for transaction analytics, compliance monitoring, fraud detection, and customer intelligence — demonstrating that even the most security-sensitive, regulatory-scrutinized financial platforms trust Snowflake with their most critical data workloads.",
+            "outcome": "Enterprise-scale transaction analytics and compliance monitoring for millions of customers on a single Snowflake platform",
+            "link": "https://www.snowflake.com/en/customers/all-customers/video/coinbase/",
+            "tag": "🔐 Regulated FinServ Proof Point"
+        },
+        {
+            "company": "TransUnion",
+            "industry": "Credit & Identity Data / Information Services",
+            "summary": "TransUnion shares how they use Snowflake to modernize their data infrastructure and deliver real-time credit, identity, and risk intelligence to financial institutions. TransUnion's use of Snowflake's data sharing and Marketplace capabilities mirrors exactly the architecture AML RightSource can leverage to distribute benchmarking intelligence and data products to bank clients at scale — without data movement or per-client integration overhead.",
+            "outcome": "Real-time financial risk intelligence delivered to FSI clients via Snowflake data sharing; accelerated data product distribution",
+            "link": "https://www.youtube.com/watch?v=NUjIFvwNdCw",
             "tag": "📊 Directly Relevant to UC-2"
         },
         {
-            "company": "Chainalysis",
-            "industry": "Crypto Compliance / Blockchain Analytics",
-            "summary": "Chainalysis — the leading blockchain analytics firm serving financial institutions, exchanges, and regulators for AML compliance — built its intelligence products as Snowflake Native Apps distributed via the Marketplace. Financial services customers install Chainalysis's crypto transaction monitoring logic directly into their Snowflake environment. Exactly the model AML RightSource is targeting for algorithm deployment in Track 3.",
-            "outcome": "Native App distribution to 1000+ Snowflake customers; IP-protected algorithm deployment at scale",
-            "link": "https://www.snowflake.com/en/customers/",
-            "tag": "⚙️ Directly Relevant to UC-3"
+            "company": "ADP",
+            "industry": "HR / Payroll / Workforce Intelligence",
+            "summary": "ADP built a dynamic benchmarking platform on Snowflake that delivers real-time HCM (Human Capital Management) metrics benchmarking to their clients — allowing organizations to compare their workforce metrics against anonymized industry peers. This is precisely the architecture AML RightSource needs for its cross-client AML benchmarking intelligence product: ADP's story proves that aggregate, anonymized benchmarking across thousands of clients is not only possible on Snowflake, but a proven SaaS revenue model.",
+            "outcome": "Industry-first dynamic benchmarking product delivering real-time peer comparisons across thousands of employer clients",
+            "link": "https://www.snowflake.com/en/blog/adp-enables-dynamic-benchmarking-hcm-metrics/",
+            "tag": "📊 Most Relevant to UC-2 Benchmarking"
         },
         {
-            "company": "SAS Institute (AML Solution)",
-            "industry": "Analytics / Financial Crimes Compliance",
-            "summary": "SAS, a long-time leader in AML analytics, integrated with Snowflake to enable financial institutions to run SAS AML models directly within their Snowflake environments using Snowpark, eliminating the need to move data to SAS servers. This validates the hybrid model AML RightSource can use — running proprietary models in the client's Snowflake environment without data egress.",
-            "outcome": "In-database model execution; zero data movement; accelerated AML analytics for FSI clients",
-            "link": "https://www.snowflake.com/en/customers/financial-services/",
-            "tag": "🔍 Advisory + Algorithm Proof Point"
+            "company": "Block (Square)",
+            "industry": "Payments / Financial Technology",
+            "summary": "Block (formerly Square) shares how they use Snowflake to power data-driven financial services for millions of merchants and consumers. Block leverages Snowflake for real-time payments analytics, fraud detection, risk scoring, and merchant intelligence — demonstrating how a modern fintech company operationalizes Snowflake across compliance, risk, and customer analytics simultaneously. A strong proof point for AML RightSource's algorithm and analytics use cases.",
+            "outcome": "Unified real-time analytics across payments, fraud, and risk workloads; accelerated product development on a single platform",
+            "link": "https://www.youtube.com/watch?v=AmzxyTjbUK0&t=27s",
+            "tag": "⚙️ FinTech Analytics & Risk Proof Point"
+        },
+        {
+            "company": "Purpose Financial",
+            "industry": "Consumer Lending / Alternative Financial Services",
+            "summary": "Purpose Financial, a consumer lending company serving underbanked communities, shares how Snowflake transformed their data operations. Purpose Financial uses Snowflake to unify loan performance data, compliance reporting, and customer analytics — enabling faster regulatory reporting and better risk management. As a regulated lender operating across complex compliance requirements, Purpose Financial's story directly reflects the regulatory data challenges AML RightSource's bank clients face.",
+            "outcome": "Unified compliance and analytics platform; faster regulatory reporting and risk intelligence for a regulated lending business",
+            "link": "https://www.snowflake.com/en/customers/all-customers/video/purpose-financial/",
+            "tag": "🔍 Regulated Compliance Data Proof Point"
         },
     ]
 
