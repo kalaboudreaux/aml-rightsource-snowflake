@@ -764,6 +764,117 @@ Isabel Yeung's engineering team builds proprietary AML scoring algorithms, case 
     st.text_area("💬 Notes & Questions — Pilot 3", placeholder="Add any notes, questions, or comments here...", height=100, key="p3_notes")
 
 
+# ══════════════════════════════════════════════════════════════════════════════
+# MUTUAL SUCCESS TIMELINE
+# ══════════════════════════════════════════════════════════════════════════════
+st.markdown("---")
+st.markdown("""
+<div style="background:linear-gradient(135deg,#0D2B4E,#11375C);border-radius:16px;padding:36px 40px;margin:32px 0;color:white">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+<span style="font-size:28px">🤝</span>
+<div><div style="font-size:22px;font-weight:900">Mutual Success Timeline</div>
+<div style="font-size:13px;color:rgba(255,255,255,0.7)">The shared journey from pilot to production — AML RightSource & Snowflake together</div></div>
+</div>
+
+<div style="position:relative;padding-left:40px">
+
+<!-- Phase 1 -->
+<div style="position:relative;padding-bottom:28px;border-left:3px solid #29B5E8;padding-left:28px">
+<div style="position:absolute;left:-12px;top:0;width:24px;height:24px;background:#29B5E8;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:white">1</div>
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#29B5E8;font-weight:700;margin-bottom:4px">Weeks 1–4 · Pilot Execution</div>
+<div style="font-size:15px;font-weight:700;margin-bottom:8px">Prove the Value</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="background:rgba(41,181,232,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">AML RightSource</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Dedicate pilot owners (Sabrina, Jonathan, Isabel)<br>• Provide baseline metrics & test data<br>• Execute simulated engagements<br>• Document results & feedback</div>
+</div>
+<div style="background:rgba(41,181,232,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">Snowflake</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Provision trial environments<br>• Load synthetic datasets<br>• SE office hours & hands-on support<br>• Weekly check-ins with pilot owners</div>
+</div>
+</div>
+</div>
+
+<!-- Phase 2 -->
+<div style="position:relative;padding-bottom:28px;border-left:3px solid #00C96F;padding-left:28px">
+<div style="position:absolute;left:-12px;top:0;width:24px;height:24px;background:#00C96F;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:white">2</div>
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#00C96F;font-weight:700;margin-bottom:4px">Week 5 · Pilot Readout</div>
+<div style="font-size:15px;font-weight:700;margin-bottom:8px">Validate & Decide</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="background:rgba(0,201,111,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">AML RightSource</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Review results vs. success criteria<br>• Internal business case to Abhishek<br>• CFO / PE board alignment<br>• Go / No-Go decision</div>
+</div>
+<div style="background:rgba(0,201,111,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">Snowflake</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Deliver formal readout presentation<br>• Quantified ROI & business impact<br>• Proposed production architecture<br>• Commercial proposal & pricing options</div>
+</div>
+</div>
+</div>
+
+<!-- Phase 3 -->
+<div style="position:relative;padding-bottom:28px;border-left:3px solid #FF7A00;padding-left:28px">
+<div style="position:absolute;left:-12px;top:0;width:24px;height:24px;background:#FF7A00;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:white">3</div>
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#FF7A00;font-weight:700;margin-bottom:4px">Weeks 6–8 · Contracting</div>
+<div style="font-size:15px;font-weight:700;margin-bottom:8px">Formalize the Partnership</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="background:rgba(255,122,0,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">AML RightSource</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Legal review of MSA & Order Form<br>• Infosec sign-off on Snowflake platform<br>• Budget approval & procurement<br>• Contract signature</div>
+</div>
+<div style="background:rgba(255,122,0,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">Snowflake</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Security package & compliance docs<br>• Deal desk: pricing & commercial terms<br>• MSA & Order Form delivery<br>• Executive engagement (VP-level)</div>
+</div>
+</div>
+</div>
+
+<!-- Phase 4 -->
+<div style="position:relative;padding-bottom:28px;border-left:3px solid #7C3AED;padding-left:28px">
+<div style="position:absolute;left:-12px;top:0;width:24px;height:24px;background:#7C3AED;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:white">4</div>
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#7C3AED;font-weight:700;margin-bottom:4px">Months 3–6 · Production Deployment</div>
+<div style="font-size:15px;font-weight:700;margin-bottom:8px">Go Live — Phase 1</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="background:rgba(124,58,237,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">AML RightSource</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Onboard first advisory clients to data sharing<br>• Begin internal data migration (Track 2)<br>• Start Native App build for first algorithm<br>• Train advisory analyst team</div>
+</div>
+<div style="background:rgba(124,58,237,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">Snowflake</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Production environment provisioning<br>• PSO architect support (optional)<br>• FSI co-sell introductions to bank clients<br>• Quarterly business reviews</div>
+</div>
+</div>
+</div>
+
+<!-- Phase 5 -->
+<div style="position:relative;padding-left:28px">
+<div style="position:absolute;left:-12px;top:0;width:24px;height:24px;background:linear-gradient(135deg,#29B5E8,#00C96F);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:white">5</div>
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#29B5E8;font-weight:700;margin-bottom:4px">Months 6–12 · Scale & Expand</div>
+<div style="font-size:15px;font-weight:700;margin-bottom:8px">Full Platform Value</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="background:rgba(41,181,232,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">AML RightSource</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Scale advisory data sharing to 20+ bank clients<br>• Launch benchmarking product on Marketplace<br>• Publish first Native App algorithms<br>• Measure revenue from new data products</div>
+</div>
+<div style="background:rgba(41,181,232,0.1);border-radius:8px;padding:10px 14px">
+<div style="font-size:10px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px">Snowflake</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.9)">• Marketplace listing support & certification<br>• Native App specialist for algorithm portfolio<br>• Joint go-to-market with FSI team<br>• Executive business review & expansion planning</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div style="margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.15);text-align:center">
+<div style="font-size:13px;color:rgba(255,255,255,0.6)">Target: Pilot kick-off → Production in <strong style="color:#29B5E8">8 weeks</strong> · Full platform value in <strong style="color:#00C96F">6–12 months</strong></div>
+</div>
+
+</div>
+""", unsafe_allow_html=True)
+
+st.text_area("💬 Notes & Questions — Mutual Success Timeline", placeholder="Add any questions about timeline, dependencies, or sequencing here...", height=100, key="timeline_notes")
+
+
 # ── FOOTER ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="footer">
