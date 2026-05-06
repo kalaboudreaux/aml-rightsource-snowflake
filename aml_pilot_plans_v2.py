@@ -248,6 +248,30 @@ Every advisory engagement — model validation, algorithm tuning, AML program as
 </div>
 """, unsafe_allow_html=True)
 
+    # ── SNOWFLAKE CAPABILITY ──────────────────────────────────────────────────
+    st.markdown('<div class="sec-title">Snowflake Capability Being Evaluated</div>', unsafe_allow_html=True)
+    st.markdown("""
+<div style="background:linear-gradient(135deg,#E8F7FD,#F0F9FF);border:2px solid #29B5E8;border-radius:14px;padding:24px;margin:12px 0">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+<span style="font-size:28px">🔐</span>
+<div style="font-size:16px;font-weight:800;color:#0D2B4E">Secure Data Sharing + Data Clean Rooms</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<div style="background:white;border-radius:10px;padding:14px;border:1px solid #D1E8F5">
+<div style="font-size:12px;font-weight:700;color:#29B5E8;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Secure Data Sharing</div>
+<div style="font-size:13px;color:#4A5568">Banks share <strong>read-only access</strong> to their transaction monitoring data, KYC data, or screening data with AML RightSource — no ETL, no file transfers, no SFTP. Data never leaves the bank's Snowflake storage.</div>
+</div>
+<div style="background:white;border-radius:10px;padding:14px;border:1px solid #D1E8F5">
+<div style="font-size:12px;font-weight:700;color:#29B5E8;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Data Clean Rooms</div>
+<div style="font-size:13px;color:#4A5568">For scenarios where <strong>double-blind matching</strong> is needed — both parties contribute data but can only see overlap/matches. Relevant given bank sensitivity around regulatory scrutiny.</div>
+</div>
+</div>
+<div style="margin-top:14px;background:#FEF2F2;border-radius:8px;padding:10px 14px;font-size:13px;color:#991B1B">
+<strong>Replaces current pain of:</strong> manual data requests, SFTP/email transfers, long onboarding cycles, unstructured data parsing.
+</div>
+</div>
+""", unsafe_allow_html=True)
+
     # ── POINT OF VIEW ─────────────────────────────────────────────────────────
     st.markdown('<div class="sec-title">Point of View — Snowflake\'s Prediction</div>', unsafe_allow_html=True)
     st.markdown("""
@@ -464,6 +488,30 @@ Jonathan McIsaac's operations team manages **10+ years of AML/BSA process data**
 - Snowflake Data Clean Rooms and aggregation controls will enforce this
 - AML RS legal must review and approve before any external sharing
 """)
+
+    # ── SNOWFLAKE CAPABILITY ──────────────────────────────────────────────────
+    st.markdown('<div class="sec-title">Snowflake Capability Being Evaluated</div>', unsafe_allow_html=True)
+    st.markdown("""
+<div style="background:linear-gradient(135deg,#E6FBF3,#F0FDF4);border:2px solid #00C96F;border-radius:14px;padding:24px;margin:12px 0">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+<span style="font-size:28px">📊</span>
+<div style="font-size:16px;font-weight:800;color:#0D2B4E">Inbound Data Sharing — Managed Application Model</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<div style="background:white;border-radius:10px;padding:14px;border:1px solid #BBF7D0">
+<div style="font-size:12px;font-weight:700;color:#00C96F;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Managed Application / Bi-Directional Sharing</div>
+<div style="font-size:13px;color:#4A5568">Customers share operational data (case management, process data) into AML RightSource's Snowflake environment. AML runs benchmarking and process insight analytics, then <strong>shares results back</strong> to clients.</div>
+</div>
+<div style="background:white;border-radius:10px;padding:14px;border:1px solid #BBF7D0">
+<div style="font-size:12px;font-weight:700;color:#00C96F;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">The Model</div>
+<div style="font-size:13px;color:#4A5568">AML RightSource ingests shared data, applies their proprietary analytics and benchmarking logic, and provides <strong>federated insights back to clients</strong> — without clients seeing each other's raw data.</div>
+</div>
+</div>
+<div style="margin-top:14px;background:#E8F7FD;border-radius:8px;padding:10px 14px;font-size:13px;color:#0D2B4E">
+<strong>Key test:</strong> Can Snowflake reduce the friction of getting customers to securely share operational data for benchmarking purposes?
+</div>
+</div>
+""", unsafe_allow_html=True)
 
     # ── POINT OF VIEW ─────────────────────────────────────────────────────────
     st.markdown('<div class="sec-title">Point of View — Snowflake\'s Prediction</div>', unsafe_allow_html=True)
@@ -697,6 +745,30 @@ Isabel Yeung's engineering team builds proprietary AML scoring algorithms, case 
 - No standard deployment framework or packaging
 - Ongoing maintenance burden per deployment
 """)
+
+    # ── SNOWFLAKE CAPABILITY ──────────────────────────────────────────────────
+    st.markdown('<div class="sec-title">Snowflake Capability Being Evaluated</div>', unsafe_allow_html=True)
+    st.markdown("""
+<div style="background:linear-gradient(135deg,#FFF8E6,#FFFBEB);border:2px solid #FF7A00;border-radius:14px;padding:24px;margin:12px 0">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+<span style="font-size:28px">⚙️</span>
+<div style="font-size:16px;font-weight:800;color:#0D2B4E">Native Application — Snowflake Marketplace / Native App Framework</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<div style="background:white;border-radius:10px;padding:14px;border:1px solid #FDE68A">
+<div style="font-size:12px;font-weight:700;color:#FF7A00;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Native App Framework</div>
+<div style="font-size:13px;color:#4A5568">AML RightSource packages their scoring algorithms (e.g., alert prioritization, quality assurance logic) as a <strong>Snowflake Native App</strong> deployed into the customer's Snowflake account. Compute runs on the customer's side; AML's IP/code remains <strong>protected and invisible</strong> to the customer.</div>
+</div>
+<div style="background:white;border-radius:10px;padding:14px;border:1px solid #FDE68A">
+<div style="font-size:12px;font-weight:700;color:#FF7A00;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Marketplace Distribution</div>
+<div style="font-size:13px;color:#4A5568">Native Apps are listed on the <strong>Snowflake Marketplace</strong> — accessible to 10,000+ FSI customers globally. Banks install with one click. AML RightSource earns recurring subscription revenue per install. No per-client custom integration required.</div>
+</div>
+</div>
+<div style="margin-top:14px;background:#E8F7FD;border-radius:8px;padding:10px 14px;font-size:13px;color:#0D2B4E">
+<strong>Key test:</strong> Can AML deploy proprietary algorithms into client environments without moving data, while protecting their intellectual property?
+</div>
+</div>
+""", unsafe_allow_html=True)
 
     # ── POINT OF VIEW ─────────────────────────────────────────────────────────
     st.markdown('<div class="sec-title">Point of View — Snowflake\'s Prediction</div>', unsafe_allow_html=True)
