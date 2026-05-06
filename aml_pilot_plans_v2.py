@@ -69,6 +69,40 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
 .footer { background: #0D2B4E; color: rgba(255,255,255,0.5); text-align: center;
     padding: 20px; border-radius: 12px; margin-top: 40px; font-size: 12px; }
+
+.kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 20px 0; }
+.kpi-card { background: linear-gradient(135deg, #0D2B4E, #11375C); color: white;
+    border-radius: 12px; padding: 20px; text-align: center; }
+.kpi-num { font-size: 26px; font-weight: 900; color: #29B5E8; }
+.kpi-label { font-size: 11px; color: rgba(255,255,255,0.7); margin-top: 4px;
+    text-transform: uppercase; letter-spacing: 1px; }
+
+.flow-diagram { display: flex; align-items: center; gap: 0; margin: 20px 0;
+    flex-wrap: wrap; justify-content: center; }
+.flow-box { background: white; border: 2px solid #D1E8F5; border-radius: 12px;
+    padding: 16px 20px; text-align: center; min-width: 140px; }
+.flow-box.highlight { border-color: #29B5E8; background: #E8F7FD; }
+.flow-box.problem { border-color: #FECACA; background: #FEF2F2; }
+.flow-box.solution { border-color: #BBF7D0; background: #F0FDF4; }
+.flow-box-icon { font-size: 24px; margin-bottom: 6px; }
+.flow-box-label { font-size: 12px; font-weight: 700; color: #0D2B4E; }
+.flow-box-sub { font-size: 11px; color: #718096; margin-top: 2px; }
+.flow-arrow { font-size: 22px; color: #29B5E8; padding: 0 8px; }
+
+.before-after { display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px;
+    margin: 20px 0; align-items: stretch; }
+.ba-card { border-radius: 12px; padding: 20px; text-align: center; }
+.ba-before { background: #FEF2F2; border: 2px solid #FECACA; }
+.ba-after { background: #F0FDF4; border: 2px solid #BBF7D0; }
+.ba-arrow { display: flex; align-items: center; justify-content: center;
+    font-size: 32px; color: #29B5E8; }
+.ba-num { font-size: 28px; font-weight: 900; margin: 8px 0; }
+.ba-label { font-size: 13px; font-weight: 600; }
+
+.timeline-bar { display: flex; gap: 0; margin: 20px 0; border-radius: 8px; overflow: hidden; }
+.tl-segment { padding: 12px 16px; text-align: center; color: white; flex: 1; }
+.tl-segment-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.tl-segment-detail { font-size: 10px; opacity: 0.8; margin-top: 2px; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -102,6 +136,16 @@ with tab1:
     </div>
     """, unsafe_allow_html=True)
 
+    # ── KPI OVERVIEW ──────────────────────────────────────────────────────────
+    st.markdown("""
+<div class="kpi-row">
+<div class="kpi-card"><div class="kpi-num">30 Days</div><div class="kpi-label">Pilot Duration</div></div>
+<div class="kpi-card"><div class="kpi-num">85%</div><div class="kpi-label">Time Reduction Target</div></div>
+<div class="kpi-card"><div class="kpi-num">2–3×</div><div class="kpi-label">Productivity Gain</div></div>
+<div class="kpi-card"><div class="kpi-num">$0</div><div class="kpi-label">Client Data Movement</div></div>
+</div>
+""", unsafe_allow_html=True)
+
     # ── OWNERSHIP ─────────────────────────────────────────────────────────────
     st.markdown('<div class="sec-title">Pilot Ownership</div>', unsafe_allow_html=True)
     st.markdown("""
@@ -123,6 +167,26 @@ This pilot validates the foundational infrastructure for AML RightSource's entir
 
     # ── CURRENT BUSINESS PROBLEM ──────────────────────────────────────────────
     st.markdown('<div class="sec-title">Current Business Problem</div>', unsafe_allow_html=True)
+
+    # Visual: Before/After comparison
+    st.markdown("""
+<div class="before-after">
+<div class="ba-card ba-before">
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#991B1B;font-weight:700">Today</div>
+<div class="ba-num" style="color:#991B1B">10–20 Days</div>
+<div class="ba-label" style="color:#7F1D1D">Time to first data access</div>
+<div style="font-size:12px;color:#991B1B;margin-top:8px">FTP → Email → Normalize → Load</div>
+</div>
+<div class="ba-arrow">➡️</div>
+<div class="ba-card ba-after">
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#065F46;font-weight:700">With Snowflake</div>
+<div class="ba-num" style="color:#065F46">< 48 Hours</div>
+<div class="ba-label" style="color:#064E3B">Zero-copy data share → Instant access</div>
+<div style="font-size:12px;color:#065F46;margin-top:8px">No data movement. No ETL.</div>
+</div>
+</div>
+""", unsafe_allow_html=True)
+
     st.markdown("""
 Every advisory engagement — model validation, algorithm tuning, AML program assessments — begins with a **data request cycle** that typically takes **10–20 business days:**
 
@@ -247,6 +311,17 @@ Every advisory engagement — model validation, algorithm tuning, AML program as
 
     # ── EXECUTION PLAN ────────────────────────────────────────────────────────
     st.markdown('<div class="sec-title">Pilot Execution Plan — 30 Days</div>', unsafe_allow_html=True)
+
+    # Visual: Timeline bar
+    st.markdown("""
+<div class="timeline-bar">
+<div class="tl-segment" style="background:#29B5E8"><div class="tl-segment-label">Setup</div><div class="tl-segment-detail">Days 1–5</div></div>
+<div class="tl-segment" style="background:#0D2B4E"><div class="tl-segment-label">Training</div><div class="tl-segment-detail">Days 5–10</div></div>
+<div class="tl-segment" style="background:#00C96F;flex:3"><div class="tl-segment-label">Execute & Measure</div><div class="tl-segment-detail">Days 10–25</div></div>
+<div class="tl-segment" style="background:#FF7A00"><div class="tl-segment-label">Readout</div><div class="tl-segment-detail">Days 25–30</div></div>
+</div>
+""", unsafe_allow_html=True)
+
     phases = [
         ("1","Days 1–5: Environment Setup","Snowflake provisions Business Critical trial account. Jordan loads synthetic AML dataset (TM alerts + KYC records). Sabrina, David, and Abhishek receive access credentials and onboarding materials. Kick-off call to walk through the environment and pilot objectives."),
         ("2","Days 5–10: Training & First Queries","Jordan leads a 90-minute hands-on session: how data sharing works, querying in Snowsight, and Cortex AI capabilities. Sabrina and David run their first advisory queries against the synthetic dataset. Document initial observations and feedback."),
@@ -275,6 +350,16 @@ with tab2:
     </div>
     """, unsafe_allow_html=True)
 
+    # ── KPI OVERVIEW ──────────────────────────────────────────────────────────
+    st.markdown("""
+<div class="kpi-row">
+<div class="kpi-card"><div class="kpi-num">30 Days</div><div class="kpi-label">Pilot Duration</div></div>
+<div class="kpi-card"><div class="kpi-num">200+</div><div class="kpi-label">FI Data Asset</div></div>
+<div class="kpi-card"><div class="kpi-num">$0 → ARR</div><div class="kpi-label">New Revenue Target</div></div>
+<div class="kpi-card"><div class="kpi-num">10,000+</div><div class="kpi-label">Marketplace Reach</div></div>
+</div>
+""", unsafe_allow_html=True)
+
     # ── OWNERSHIP ─────────────────────────────────────────────────────────────
     st.markdown('<div class="sec-title">Pilot Ownership</div>', unsafe_allow_html=True)
     st.markdown("""
@@ -296,6 +381,22 @@ This pilot validates the technical feasibility of migrating internal operational
 
     # ── CURRENT BUSINESS PROBLEM ──────────────────────────────────────────────
     st.markdown('<div class="sec-title">Current Business Problem</div>', unsafe_allow_html=True)
+
+    # Visual: Data flow diagram
+    st.markdown("""
+<div class="flow-diagram">
+<div class="flow-box problem"><div class="flow-box-icon">🏦</div><div class="flow-box-label">200+ Bank Clients</div><div class="flow-box-sub">Operational data</div></div>
+<div class="flow-arrow">➡️</div>
+<div class="flow-box problem"><div class="flow-box-icon">📁</div><div class="flow-box-label">Siloed Systems</div><div class="flow-box-sub">No unified layer</div></div>
+<div class="flow-arrow">➡️</div>
+<div class="flow-box problem"><div class="flow-box-icon">❌</div><div class="flow-box-label">$0 Revenue</div><div class="flow-box-sub">Asset dormant</div></div>
+<div class="flow-arrow" style="color:#00C96F">➡️</div>
+<div class="flow-box solution"><div class="flow-box-icon">❄️</div><div class="flow-box-label">Snowflake</div><div class="flow-box-sub">Unified + Monetized</div></div>
+<div class="flow-arrow" style="color:#00C96F">➡️</div>
+<div class="flow-box solution"><div class="flow-box-icon">💰</div><div class="flow-box-label">$5–15M ARR</div><div class="flow-box-sub">Marketplace product</div></div>
+</div>
+""", unsafe_allow_html=True)
+
     st.markdown("""
 Jonathan McIsaac's operations team manages **10+ years of AML/BSA process data** across 200+ financial institution clients — including case resolution rates, false positive rates, analyst productivity metrics, SAR filing volumes, and operational benchmarks.
 
@@ -411,6 +512,17 @@ Jonathan McIsaac's operations team manages **10+ years of AML/BSA process data**
 
     # ── EXECUTION PLAN ────────────────────────────────────────────────────────
     st.markdown('<div class="sec-title">Pilot Execution Plan — 30 Days</div>', unsafe_allow_html=True)
+
+    # Visual: Timeline bar
+    st.markdown("""
+<div class="timeline-bar">
+<div class="tl-segment" style="background:#29B5E8"><div class="tl-segment-label">Discovery</div><div class="tl-segment-detail">Days 1–5</div></div>
+<div class="tl-segment" style="background:#0D2B4E;flex:2"><div class="tl-segment-label">Migration & Modeling</div><div class="tl-segment-detail">Days 5–15</div></div>
+<div class="tl-segment" style="background:#00C96F;flex:2"><div class="tl-segment-label">Build Benchmarks</div><div class="tl-segment-detail">Days 15–22</div></div>
+<div class="tl-segment" style="background:#FF7A00"><div class="tl-segment-label">Validate & Readout</div><div class="tl-segment-detail">Days 22–30</div></div>
+</div>
+""", unsafe_allow_html=True)
+
     phases = [
         ("1","Days 1–5: Discovery & Data Audit","Jonathan discovery call: identify pilot dataset (2 years of case management data from 1 BU). Catalog internal data sources and confirm volumes. Set baseline: what benchmark questions can AML RS answer today vs. what the target state looks like."),
         ("2","Days 5–15: Data Migration & Modeling","AML RS data engineer + Jordan co-build Snowflake data pipeline. Load pilot dataset; validate integrity. Build star schema optimized for benchmarking analytics. Implement anonymization layer (aggregate-level controls, k-anonymity)."),
@@ -439,6 +551,16 @@ with tab3:
     </div>
     """, unsafe_allow_html=True)
 
+    # ── KPI OVERVIEW ──────────────────────────────────────────────────────────
+    st.markdown("""
+<div class="kpi-row">
+<div class="kpi-card"><div class="kpi-num">30 Days</div><div class="kpi-label">Pilot Duration</div></div>
+<div class="kpi-card"><div class="kpi-num">6 Mo → Min</div><div class="kpi-label">Deployment Speed</div></div>
+<div class="kpi-card"><div class="kpi-num">100%</div><div class="kpi-label">IP Protected</div></div>
+<div class="kpi-card"><div class="kpi-num">1-Click</div><div class="kpi-label">Client Install</div></div>
+</div>
+""", unsafe_allow_html=True)
+
     # ── OWNERSHIP ─────────────────────────────────────────────────────────────
     st.markdown('<div class="sec-title">Pilot Ownership</div>', unsafe_allow_html=True)
     st.markdown("""
@@ -460,6 +582,41 @@ This pilot validates that one existing AML RightSource algorithm can be successf
 
     # ── CURRENT BUSINESS PROBLEM ──────────────────────────────────────────────
     st.markdown('<div class="sec-title">Current Business Problem</div>', unsafe_allow_html=True)
+
+    # Visual: Architecture diagram — current vs. future
+    st.markdown("""
+<div class="before-after">
+<div class="ba-card ba-before">
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#991B1B;font-weight:700">Current Model</div>
+<div class="ba-num" style="color:#991B1B;font-size:22px">3–6 Months</div>
+<div class="ba-label" style="color:#7F1D1D">Per client, per algorithm</div>
+<div style="font-size:12px;color:#991B1B;margin-top:8px">Custom build → IP exposed → One-time fee</div>
+</div>
+<div class="ba-arrow">➡️</div>
+<div class="ba-card ba-after">
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#065F46;font-weight:700">Native App Model</div>
+<div class="ba-num" style="color:#065F46;font-size:22px">< 30 Minutes</div>
+<div class="ba-label" style="color:#064E3B">One build → Unlimited installs</div>
+<div style="font-size:12px;color:#065F46;margin-top:8px">IP protected → Recurring SaaS → Marketplace</div>
+</div>
+</div>
+""", unsafe_allow_html=True)
+
+    # Visual: Native App Flow
+    st.markdown("""
+<div class="flow-diagram">
+<div class="flow-box highlight"><div class="flow-box-icon">👩‍💻</div><div class="flow-box-label">Isabel's Team</div><div class="flow-box-sub">Builds algorithm</div></div>
+<div class="flow-arrow">➡️</div>
+<div class="flow-box highlight"><div class="flow-box-icon">📦</div><div class="flow-box-label">Native App</div><div class="flow-box-sub">Snowpark package</div></div>
+<div class="flow-arrow">➡️</div>
+<div class="flow-box highlight"><div class="flow-box-icon">🛒</div><div class="flow-box-label">Marketplace</div><div class="flow-box-sub">10,000+ FSI customers</div></div>
+<div class="flow-arrow">➡️</div>
+<div class="flow-box solution"><div class="flow-box-icon">🏦</div><div class="flow-box-label">Bank Installs</div><div class="flow-box-sub">1-click, IP safe</div></div>
+<div class="flow-arrow">➡️</div>
+<div class="flow-box solution"><div class="flow-box-icon">💰</div><div class="flow-box-label">Recurring Revenue</div><div class="flow-box-sub">$$/month/install</div></div>
+</div>
+""", unsafe_allow_html=True)
+
     st.markdown("""
 Isabel Yeung's engineering team builds proprietary AML scoring algorithms, case prioritization models, and QA automation logic in Python environments. Deploying these into a client's environment currently requires:
 
@@ -579,6 +736,17 @@ Isabel Yeung's engineering team builds proprietary AML scoring algorithms, case 
 
     # ── EXECUTION PLAN ────────────────────────────────────────────────────────
     st.markdown('<div class="sec-title">Pilot Execution Plan — 30 Days</div>', unsafe_allow_html=True)
+
+    # Visual: Timeline bar
+    st.markdown("""
+<div class="timeline-bar">
+<div class="tl-segment" style="background:#29B5E8"><div class="tl-segment-label">Discovery</div><div class="tl-segment-detail">Days 1–5</div></div>
+<div class="tl-segment" style="background:#0D2B4E;flex:3"><div class="tl-segment-label">Native App Build</div><div class="tl-segment-detail">Days 5–20</div></div>
+<div class="tl-segment" style="background:#00C96F"><div class="tl-segment-label">Client Sim</div><div class="tl-segment-detail">Days 20–25</div></div>
+<div class="tl-segment" style="background:#FF7A00"><div class="tl-segment-label">Readout</div><div class="tl-segment-detail">Days 25–30</div></div>
+</div>
+""", unsafe_allow_html=True)
+
     phases = [
         ("1","Days 1–5: Discovery & Scoping","Isabel technical discovery call with Jordan — current stack, algorithm architecture, Snowpark compatibility assessment. Select 1 algorithm for pilot (recommendation: AlertIQ priority scorer). Document input/output schema. Jordan provisions dev environment + synthetic test data."),
         ("2","Days 5–20: Native App Development","Isabel's engineer + Jordan co-build Snowpark Python wrapper for selected algorithm. Package as Native App with consumer privileges defined. IP protection testing: verify client cannot view source. Accuracy testing: compare Native App output vs. standalone model."),
