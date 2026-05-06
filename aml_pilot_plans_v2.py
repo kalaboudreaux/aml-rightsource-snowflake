@@ -336,7 +336,17 @@ Every advisory engagement — model validation, algorithm tuning, AML program as
 </div>""", unsafe_allow_html=True)
 
     st.markdown("---")
-    st.text_area("💬 Notes & Questions — Pilot 1", placeholder="Add any notes, questions, or comments here...", height=100, key="p1_notes")
+    st.markdown('<div class="sec-title">✏️ Editable Notes</div>', unsafe_allow_html=True)
+    if "p1_pov_edit" not in st.session_state:
+        st.session_state.p1_pov_edit = "AML RightSource's advisory practice is constrained by a manual, multi-week data onboarding process. Snowflake's zero-copy data sharing can reduce time-to-data from 10-20 days to under 48 hours, increasing analyst productivity by 50-100%."
+    if "p1_obj_edit" not in st.session_state:
+        st.session_state.p1_obj_edit = "Reduce advisory engagement time-to-first-data-access from 10-20 days to <48 hours. Enable 2x more advisory clients with the same analyst headcount."
+    if "p1_notes" not in st.session_state:
+        st.session_state.p1_notes = ""
+
+    st.text_area("📝 POV Statement (editable)", key="p1_pov_edit", height=100)
+    st.text_area("🎯 Business Objective (editable)", key="p1_obj_edit", height=80)
+    st.text_area("💬 Notes, Questions & Comments", placeholder="Add any notes, questions, or comments here...", height=100, key="p1_notes")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -405,7 +415,7 @@ Jonathan McIsaac's operations team manages **10+ years of AML/BSA process data**
 - Offer clients comparative performance intelligence vs. peers
 - Monetize a data asset that no competitor in the market possesses
 
-**The business impact:** A proprietary data asset with estimated **$5–15M ARR potential** is currently generating **$0 in product revenue**. Competitors (Celent, NICE Actimize) already sell inferior benchmark products to the same bank clients. AML RightSource's unique advantage — aggregate visibility across 200+ FIs — remains unleveraged.
+**The business impact:** A proprietary data asset with estimated 5-15M ARR potential is currently generating zero product revenue. Competitors (Celent, NICE Actimize) already sell inferior benchmark products to the same bank clients. AML RightSource's unique advantage — aggregate visibility across 200+ FIs — remains unleveraged.
 """)
 
     # ── BUSINESS OBJECTIVE ────────────────────────────────────────────────────
@@ -471,7 +481,7 @@ Jonathan McIsaac's operations team manages **10+ years of AML/BSA process data**
         ("SC-1: Data Migration", "0% of internal data on a unified platform", "Pilot dataset (2 years, 1 BU) migrated and queryable", "Validate row counts, data integrity checks, query performance"),
         ("SC-2: Benchmark Query Performance", "No real-time cross-client benchmarking", "Produce benchmark report in < 5 minutes", "Run benchmark SQL on migrated dataset; time execution"),
         ("SC-3: Anonymization Compliance", "No anonymization framework exists", "Legal/compliance sign-off on anonymized output", "Legal review of sample benchmark output"),
-        ("SC-4: Market Validation", "$0 benchmarking product revenue", "3–5 bank clients express subscription interest", "Share sample benchmark report with 5 current clients; gather feedback"),
+        ("SC-4: Market Validation", "Zero benchmarking product revenue", "3–5 bank clients express subscription interest", "Share sample benchmark report with 5 current clients; gather feedback"),
     ]
     for name, baseline, target, method in criteria2:
         st.markdown(f"""
@@ -537,7 +547,17 @@ Jonathan McIsaac's operations team manages **10+ years of AML/BSA process data**
 </div>""", unsafe_allow_html=True)
 
     st.markdown("---")
-    st.text_area("💬 Notes & Questions — Pilot 2", placeholder="Add any notes, questions, or comments here...", height=100, key="p2_notes")
+    st.markdown('<div class="sec-title">✏️ Editable Notes</div>', unsafe_allow_html=True)
+    if "p2_pov_edit" not in st.session_state:
+        st.session_state.p2_pov_edit = "AML RightSource possesses the most comprehensive AML/BSA process performance dataset across 200+ FIs — currently fragmented and unmonetized. Snowflake can consolidate this asset and enable the industry's first real-time cross-client benchmarking intelligence product."
+    if "p2_obj_edit" not in st.session_state:
+        st.session_state.p2_obj_edit = "Prove internal operational data can be migrated to Snowflake, anonymized appropriately, and used to generate cross-client benchmark insights — validating technical feasibility and market demand."
+    if "p2_notes" not in st.session_state:
+        st.session_state.p2_notes = ""
+
+    st.text_area("📝 POV Statement (editable)", key="p2_pov_edit", height=100)
+    st.text_area("🎯 Business Objective (editable)", key="p2_obj_edit", height=80)
+    st.text_area("💬 Notes, Questions & Comments", placeholder="Add any notes, questions, or comments here...", height=100, key="p2_notes")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -668,7 +688,7 @@ Isabel Yeung's engineering team builds proprietary AML scoring algorithms, case 
 - 3–6 months per client, per algorithm
 - Custom integration required at every client
 - IP exposed in delivery
-- Revenue: one-time project fee (~$50K–$150K/engagement)
+- Revenue: one-time project fee (~50K–150K per engagement)
 - No recurring subscription model
 
 **Key Deployment Friction Points (to confirm with Isabel):**
@@ -761,7 +781,17 @@ Isabel Yeung's engineering team builds proprietary AML scoring algorithms, case 
 </div>""", unsafe_allow_html=True)
 
     st.markdown("---")
-    st.text_area("💬 Notes & Questions — Pilot 3", placeholder="Add any notes, questions, or comments here...", height=100, key="p3_notes")
+    st.markdown('<div class="sec-title">✏️ Editable Notes</div>', unsafe_allow_html=True)
+    if "p3_pov_edit" not in st.session_state:
+        st.session_state.p3_pov_edit = "AML RightSource's engineering team has built proprietary AML scoring algorithms that require 3-6 months of bespoke engineering per client deployment. Snowflake's Native App Framework can package this IP into self-serve installable applications deployed in minutes from the Marketplace."
+    if "p3_obj_edit" not in st.session_state:
+        st.session_state.p3_obj_edit = "Prove that 1 existing algorithm can be packaged as a Snowflake Native App with full IP protection, >99% output accuracy, and deployment time reduced from months to minutes."
+    if "p3_notes" not in st.session_state:
+        st.session_state.p3_notes = ""
+
+    st.text_area("📝 POV Statement (editable)", key="p3_pov_edit", height=100)
+    st.text_area("🎯 Business Objective (editable)", key="p3_obj_edit", height=80)
+    st.text_area("💬 Notes, Questions & Comments", placeholder="Add any notes, questions, or comments here...", height=100, key="p3_notes")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -872,7 +902,14 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-st.text_area("💬 Notes & Questions — Mutual Success Timeline", placeholder="Add any questions about timeline, dependencies, or sequencing here...", height=100, key="timeline_notes")
+st.markdown('<div class="sec-title">✏️ Editable Notes</div>', unsafe_allow_html=True)
+if "timeline_edit" not in st.session_state:
+    st.session_state.timeline_edit = ""
+if "timeline_notes" not in st.session_state:
+    st.session_state.timeline_notes = ""
+
+st.text_area("📅 Timeline Adjustments (editable)", placeholder="Adjust dates, add dependencies, or modify milestones here...", height=80, key="timeline_edit")
+st.text_area("💬 Notes, Questions & Comments", placeholder="Add any questions about timeline, dependencies, or sequencing here...", height=100, key="timeline_notes")
 
 
 # ── FOOTER ────────────────────────────────────────────────────────────────────
